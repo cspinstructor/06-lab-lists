@@ -25,3 +25,9 @@ window.fn.load = function(page, mytitle) {
   data = { data: { title: mytitle }, animation: 'slide' };
   navigator.pushPage(page, data).then(menu.close.bind(menu));
 };
+
+function stopProgressCirle() {
+  var progressCircle = document.getElementById('progress-circle');
+  progressCircle.style.display = 'none';
+  //$('.progress-circle').css('display', 'none');
+}
